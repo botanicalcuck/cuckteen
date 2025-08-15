@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Menu</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Canteen!</h1>
+        <p>Check out today's delicious menu below:</p>
+    </header>
+
+    <section class="menu">
+        <h2>Today's Menu</h2>
+        <ul id="menu-list">
+            <li>
+                <span class="item-name">Burger</span> - $5.00
+                <button class="order-btn" data-item="Burger" data-price="5.00">Order</button>
+            </li>
+            <li>
+                <span class="item-name">Pizza Slice</span> - $3.50
+                <button class="order-btn" data-item="Pizza Slice" data-price="3.50">Order</button>
+            </li>
+            <li>
+                <span class="item-name">Pasta</span> - $7.00
+                <button class="order-btn" data-item="Pasta" data-price="7.00">Order</button>
+            </li>
+            <li>
+                <span class="item-name">Salad</span> - $4.00
+                <button class="order-btn" data-item="Salad" data-price="4.00">Order</button>
+            </li>
+        </ul>
+    </section>
+
+    <section class="order-summary">
+        <h3>Your Order</h3>
+        <ul id="order-list"></ul>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button id="place-order">Place Order</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Canteen Inc.</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
